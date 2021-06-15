@@ -24,11 +24,28 @@
     </header>
 
     <main>
-        <section class="historic">
-            <h2>Histórico</h2>
-            
+        <section class="search">
+            <h2>Busque obras de arte</h2>
+        <form>
+          <div class="searchNumberOfRequest">
+            <label for="numeroSessoes">Informe quantia de sessões que deseja como opção</label>
+            <input type="number" id="numeroSessoes" rows="2" placeholder="[1, 2, 3, 4, ... Limite:30]"></textarea>
+            <button>Buscar</button>
+          </div>
+          <div>
+            <label for="efeitoTamanho">Efeito de Tamanho</label>
+            <select id="efeitoTamanho">
+              <!---<option value="uppercase">Maiúsculas</option>-->
+              <!---<option value="lowercase">Minúsculas</option>-->
+            </select>
+          </div>      
+          <div>
+            <label for="modificado">Modificado</label>
+            <textarea name="modificado" id="modificado" rows="10" disabled></textarea>
+          </div>
+        </form>
         </section>
-    </main>
+      </main>
 
     <footer>
         <p>
@@ -37,7 +54,8 @@
         </p>
     </footer>
 
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/api.js"></script>
 </body>
 </html>
