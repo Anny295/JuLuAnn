@@ -150,3 +150,11 @@ input {
 }
 
 /* 3 - Página de histórico */
+section ul {
+  background-color: rgb(255, 214, 165);
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  border-radius: 5px;
+}
